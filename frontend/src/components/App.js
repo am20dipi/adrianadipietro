@@ -1,5 +1,5 @@
-import Navbar from './Navbar.js'
-import Home from './Home.js'
+import Navbar from './Navbar'
+import Home from './Home'
 import React from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
