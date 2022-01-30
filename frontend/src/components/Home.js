@@ -1,8 +1,11 @@
 
 function Home(){
     return(
-        <div className="home-container">
-            <h1>home</h1>
+        <div className="parallax">
+            <div className="container">
+                <h1>home</h1>
+                <p>adriadriadriadriadriadriadriadriadriadriadriadriadriadriadriadriadriadriadriadriadri</p>
+            </div>
         </div>
     )
 
