@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Document, Page, pdfjs } from "react-pdf";
-import resume from '../Resume.pdf'
+import resume from '../AdrianaDiPietroResume.pdf'
+import { Link } from 'react-router-dom'
 
 
 function Resume(){
@@ -18,6 +19,7 @@ function Resume(){
         <>
             <div className="container">
                 <h2>resume</h2>
+                <Link to={resume} target="_blank" download>click to download</Link>
                 <Document 
                     file={resume}
                     onLoadSuccess={onDocumentLoadSuccess}
@@ -25,6 +27,8 @@ function Resume(){
                     <Page pageNumber={pageNumber} />
                 </Document>
                 <p>Page {pageNumber} of {numPages}</p>
+                <p>...</p>
+                <Link to={resume} target="_blank" download>click to download</Link>
             </div>
         </>
         )
