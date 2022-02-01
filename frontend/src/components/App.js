@@ -6,12 +6,26 @@ import Footer from './Footer'
 import Blog from './Blog'
 import Resume from './Resume'
 import Projects from './Projects'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
+  const [offsetY, setOffsetY] = useState(0)
+  const handleScroll = () => setOffsetY(window.pageYOffset)
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+
+  }, [])
+
+
   return (
     <div className="App">
+      <div className="parallax" 
+      style={{transform: `translateY(${offsetY * 0.5}px)`}}>
+
         <BrowserRouter>
           <Navbar/>
           <Routes>
@@ -23,6 +37,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
           </Routes>
         </BrowserRouter>
+      </div>
     <Footer/>
     </div>
   );

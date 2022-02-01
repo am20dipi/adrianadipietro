@@ -1,10 +1,11 @@
 function Projects(){
     return (
         <div className="container">
-            <h2>some of my projects</h2>
+            <h2>projects</h2>
+            <br/>
             <div className="card-deck">
-                <div className="card">
-                    <img className="card-img-top" src="..." alt="Card image cap"/>
+                <div className="card" id="project">
+                    <img className="card-img-top" src="http://localhost:3000/silvermark.png" alt="SILVERMARK"/>
                     <div className="card-body">
                         <h5 className="card-title">SILVERMARK</h5>
                         <p className="card-text">
@@ -15,8 +16,8 @@ function Projects(){
                         <a href="https://youtu.be/67Rem5GVe4M"  target="_blank" rel="noopener noreferrer" className="card-link">demo</a>
                     </div>
                 </div>
-                <div className="card">
-                    <img className="card-img-top" src="..." alt="Card image cap"/>
+                <div className="card" id="project">
+                    <img className="card-img-top" src="..." alt="ADR-UI"/>
                     <div className="card-body">
                         <h5 className="card-title">ADR-UI</h5>
                         <p className="card-text">
@@ -27,8 +28,8 @@ function Projects(){
 
                     </div>
                 </div>
-                <div className="card">
-                    <img className="card-img-top" src="..." alt="Card image cap"/>
+                <div className="card" id="project">
+                    <img className="card-img-top" src="..." alt="UPFRONT"/>
                     <div className="card-body">
                         <h5 className="card-title">UPFRONT</h5>
                         <p className="card-text">
