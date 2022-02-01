@@ -37,8 +37,9 @@ function App() {
             <Route path="/projects" element={<Projects />} />
           </Routes>
         </BrowserRouter>
+        <Footer/>
       </div>
-    <Footer/>
+    
     </div>
   );
 }
