@@ -20,31 +20,37 @@ function Home(){
             <div className="container">
                 <div className="card-deck">
                     <div className="card" id="skillset">
-                        <h5>FRONTEND</h5>
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>HTML5</li>
-                            <li>CSS</li>
-                            <li>React</li>
-                            <li>Redux</li>
-                        </ul>
+                        <div className="card-body">
+                            <h5 className="card-title">FRONTEND</h5>
+            
+                                <li>JavaScript</li>
+                                <li>HTML5</li>
+                                <li>CSS</li>
+                                <li>React</li>
+                                <li>Redux</li>
+                                
+                        </div>
+                        
                     </div>
                     <div className="card" id="skillset">
-                        <h5>DATABASE</h5>
-                        <ul>
-                            <li>mySQL</li>
-                            <li>PostgreSQL</li>
-                        </ul>
+                        <div className="card-body">
+                                <h5 className="card-title">DATABASE</h5>
+                                    
+                                    <li>mySQL</li>
+                                    <li>PostgreSQL</li>
+                                    
+                        </div>
                     </div>
                     <div className="card" id="skillset">
-                        <h5>SERVER</h5>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Babel</li>
-                            <li>Webpack</li>
-                        </ul>
+                        <div className="card-body">
+                            <h5 className="card-title">SERVER-SIDE</h5>
+                                
+                                <li>Node.js</li>
+                                <li>Webpack</li>
+                                <li>Babel</li>    
+                                
+                        </div>
                     </div>
-                    <div className="card" id="skillset"></div>
                 </div>
             </div>
         </div>
