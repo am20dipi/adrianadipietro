@@ -23,7 +23,7 @@ function Projects(){
                     <img className="card-img-top" src={silvermark} alt="SILVERMARK image" style={{padding: '1px 1px', borderRadius: '7px'}}/>
                     <div className="card-body">
                         <h5 className="card-title">SILVERMARK</h5>
-                        <p className="card-text">
+                        <p className="card-text text-muted">
                             SILVERMARK is a minimalist bookmark manager application that allows users to create, view, and delete bookmarks.
                             SILVERMARK utilizes a Ruby on Rails backend and a JavaScript frontend. SILVERMARK utilizes a React framework and Redux middleware.
                         </p>
@@ -48,7 +48,7 @@ function Projects(){
                     <img className="card-img-top" src="..." alt="ADR-UI"/>
                     <div className="card-body">
                         <h5 className="card-title">ADR-UI</h5>
-                        <p className="card-text">
+                        <p className="card-text text-muted">
                             ADR-UI is a UI library that exemplifies simple, reusable code to be utilized in future applications.
                             ADR-UI utilizes JavaScript, HTML, CSS, Webpack and Node Package Manager.
                         </p>
@@ -60,7 +60,7 @@ function Projects(){
                     <img className="card-img-top" style={{height: '11em'}} src={upfront} alt="UPFRONT"/>
                     <div className="card-body">
                         <h5 className="card-title">UPFRONT</h5>
-                        <p className="card-text">
+                        <p className="card-text text-muted">
                             UPFRONT is a single page application that allows users to create, view, edit and delete items (or tasks) in a to-do list format.
                             UPFRONT utilizes a Ruby on Rails backend and a JavaScript frontend.
                         </p>

@@ -2,7 +2,7 @@
 function Home(){
     return(
         <div className="parallax">
-            <div className="container">
+            <div className="header">
                 <h1>ADRIANA DIPIETRO</h1>
                 <p>...</p>
                 <h2>FRONTEND FOCUSED SOFTWARE ENGINEER</h2>

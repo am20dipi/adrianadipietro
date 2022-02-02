@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <div className="parallax" 
-      style={{transform: `translateY(${offsetY * 0.5}px)`}}>
+      style={{transform: `translateY(${offsetY * 0.1}px)`}}>
 
         <BrowserRouter>
           <Navbar/>
