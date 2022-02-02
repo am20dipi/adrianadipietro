@@ -42,7 +42,7 @@ div.profile-badge{
 
 .card {
   width: 10rem;
-  height: 30rem;
+  height: 100%;
   display: inline-grid;
 }
 
@@ -79,10 +79,126 @@ div.profile-badge{
   background-size: cover;
 }
 
-#contact {
-  box-shadow: 7px 10px 10px 1px #beb8aa;
+
+li {
+  list-style: none;
 }
 
-#contact:hover{
-  border: 1px solid rgb(171, 177, 162);
+ul {
+  text-align: center;
 }
+
+.social-menu ul {
+  position: relative;
+  top: 80%;
+  left: 50%;
+  padding: 10px;
+  margin: 0;
+  transform: translate(-10%, -30%);
+  display: flex;
+
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fa{
+  font-size: 30px;
+  line-height: 60px;
+  transition: 0.6s;
+  color: #000;
+}
+
+.social-menu ul li a{
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 12px 10px rgba(0,0,0, 0.1)
+}
+
+.social-menu ul li a:hover{
+  cursor: pointer; 
+  transform: translate(0, -10px);
+}
+
+
+
+
+
+
+
+
+
+/* .container#contact {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+.wrapper.button:hover{
+  cursor: pointer;
+  width: 200px;
+}
+
+.wrapper.button.icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper.button:nth-child(1)hover.icon{
+  background: red;
+}
+
+.wrapper.button:nth-child(2)hover.icon{
+  background: limegreen;
+}
+
+.wrapper.button:nth-child(3)hover.icon{
+  background: blue;
+}
+
+.wrapper.button.icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;;
+}
+
+.wrapper.button:nth-child(1)span{
+  color: #4267b2
+}
+
+.wrapper.button:nth-child(2)span{
+  color: #4267b2
+}
+
+.wrapper.button:nth-child(3)span{
+  color: #4267b2
+}
+
+ */

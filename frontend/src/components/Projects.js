@@ -1,3 +1,6 @@
+import silvermark from '../silvermark.png'
+import upfront from '../upfront.png'
+
 function Projects(){
     return (
         <div className="container">
@@ -5,7 +8,7 @@ function Projects(){
             <br/>
             <div className="card-deck">
                 <div className="card" id="project">
-                    <img className="card-img-top" src="http://localhost:3000/silvermark.png" alt="SILVERMARK"/>
+                    <img className="card-img-top" src={silvermark}alt="SILVERMARK"/>
                     <div className="card-body">
                         <h5 className="card-title">SILVERMARK</h5>
                         <p className="card-text">
@@ -29,7 +32,7 @@ function Projects(){
                     </div>
                 </div>
                 <div className="card" id="project">
-                    <img className="card-img-top" src="..." alt="UPFRONT"/>
+                    <img className="card-img-top" style={{height: '11em'}} src={upfront} alt="UPFRONT"/>
                     <div className="card-body">
                         <h5 className="card-title">UPFRONT</h5>
                         <p className="card-text">
