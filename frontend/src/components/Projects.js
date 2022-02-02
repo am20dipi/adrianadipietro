@@ -1,14 +1,26 @@
 import silvermark from '../silvermark.png'
 import upfront from '../upfront.png'
 
+import React, {useState} from 'react'
+import gif from '../silvermark.gif'
+import  Button  from 'react-bootstrap/Button'
+import  {Modal}  from 'react-bootstrap'
+
+
+
 function Projects(){
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
         <div className="container">
             <h2>projects</h2>
             <br/>
             <div className="card-deck">
                 <div className="card" id="project">
-                    <img className="card-img-top" src={silvermark}alt="SILVERMARK"/>
+                    <img className="card-img-top" src={silvermark} alt="SILVERMARK image" style={{padding: '1px 1px', borderRadius: '7px'}}/>
                     <div className="card-body">
                         <h5 className="card-title">SILVERMARK</h5>
                         <p className="card-text">
@@ -16,7 +28,20 @@ function Projects(){
                             SILVERMARK utilizes a Ruby on Rails backend and a JavaScript frontend. SILVERMARK utilizes a React framework and Redux middleware.
                         </p>
                         <a href="https://github.com/am20dipi/silvermark"  target="_blank" rel="noopener noreferrer" className="card-link">github</a>
-                        <a href="https://youtu.be/67Rem5GVe4M"  target="_blank" rel="noopener noreferrer" className="card-link">demo</a>
+                        {/* <a href="https://youtu.be/67Rem5GVe4M"  target="_blank" rel="noopener noreferrer" className="card-link">demo</a> */}
+                        <br/><br/>
+                        <Button variant="light" onClick={handleShow}>
+                            demo
+                        </Button>
+
+                        <Modal size="lg" show={show} onHide={handleClose}>
+                            <Modal.Header closeButton>
+                                <Modal.Title>SILVERMARK DEMO</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body style={{marginLeft: '85px'}}>
+                                <img alt="silvermark gif" src={gif}/>
+                            </Modal.Body>
+                        </Modal>
                     </div>
                 </div>
                 <div className="card" id="project">

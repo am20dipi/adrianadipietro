@@ -48,12 +48,12 @@ div.profile-badge{
 
 
 #blog {
-  box-shadow: 7px 10px 10px 1px rgb(207, 201, 201);
+  box-shadow: 7px 10px 10px 1px rgb(184, 167, 167);
 }
 
 #blog:hover{
-  border: 1px solid rgb(160, 151, 151);
-  box-shadow: 7px 10px 7px 1px rgb(207, 201, 201);
+  border: 1px solid rgb(199, 161, 161);
+  box-shadow: 7px 10px 7px 1px rgb(184, 167, 167);
 }
 
 #project {
@@ -133,6 +133,10 @@ ul {
   box-shadow: 0 0px 12px 0px rgb(207, 187, 187);
   height: 125%;
   width: 89% !important;
+}
+
+.card#skillset:hover{
+  transform: translate(0, -10px);
 }
 
 
