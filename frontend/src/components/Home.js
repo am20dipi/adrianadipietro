@@ -12,6 +12,7 @@ function Home(){
                 <h5>MOTIVATED TO PRODUCE RESULTS</h5>
                 <p>With an untraditional background, I do not let expectations rule over my behavior.</p>
                 <p>I prioritize effective results by effective means.</p>
+                <br/>
                 <h5>LIFELONG TEACHER + STUDENT</h5>
                 <p>As I am consistently self-teaching, I welcome new technologies as learning experiences.</p>
                 <p>I enjoy collaborating both by being a team player and a teacher when needed.</p>
@@ -23,11 +24,11 @@ function Home(){
                         <div className="card-body">
                             <h5 className="card-title">FRONTEND</h5>
             
-                                <li>JavaScript</li>
-                                <li>HTML5</li>
-                                <li>CSS</li>
-                                <li>React</li>
-                                <li>Redux</li>
+                                 <li className="text-muted">JavaScript</li>
+                                 <li className="text-muted">HTML5</li>
+                                 <li className="text-muted">CSS</li>
+                                 <li className="text-muted">React</li>
+                                 <li className="text-muted">Redux</li>
                                 
                         </div>
                         
@@ -36,8 +37,8 @@ function Home(){
                         <div className="card-body">
                                 <h5 className="card-title">DATABASE</h5>
                                     
-                                    <li>mySQL</li>
-                                    <li>PostgreSQL</li>
+                                     <li className="text-muted">mySQL</li>
+                                     <li className="text-muted">PostgreSQL</li>
                                     
                         </div>
                     </div>
@@ -45,9 +46,9 @@ function Home(){
                         <div className="card-body">
                             <h5 className="card-title">SERVER-SIDE</h5>
                                 
-                                <li>Node.js</li>
-                                <li>Webpack</li>
-                                <li>Babel</li>    
+                                 <li className="text-muted">Node.js</li>
+                                 <li className="text-muted">Webpack</li>
+                                 <li className="text-muted">Babel</li>    
                                 
                         </div>
                     </div>

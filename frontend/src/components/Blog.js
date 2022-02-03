@@ -5,7 +5,7 @@ function Blog(){
     return (
         <>
         <div className="container">
-            
+            <h2>blog</h2>
             <p className="text-muted">Here are some of my most recent blog posts.</p>
             <p className="text-muted"> Click the links to read the full articles. </p>
             <p className="text-muted"> Feel free to ask questions, leave comments or follow.</p>

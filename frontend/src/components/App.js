@@ -23,19 +23,23 @@ function App() {
 
   return (
     <div className="App">
+      
+      <BrowserRouter>
+        <Navbar/>
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+        
+      </BrowserRouter>
       <div className="parallax" 
       style={{transform: `translateY(${offsetY * 0.1}px)`}}>
-
-        <BrowserRouter>
-          <Navbar/>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
-        </BrowserRouter>
+        
+        <Contact/>
         <Footer/>
       </div>
     

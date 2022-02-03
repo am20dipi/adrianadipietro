@@ -1,9 +1,9 @@
-import Contact from "./Contact"
+//import Contact from "./Contact"
 
 function Footer(){
     return (
         <>
-        <Contact/>
+        
         <footer className="page-footer font-small">
             
             <div className="footer-copyright bg-light text-center py-3">
