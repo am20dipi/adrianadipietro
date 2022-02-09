@@ -1,7 +1,7 @@
 import silvermark from '../silvermark.png'
 import upfront from '../upfront.png'
 
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import gif from '../silvermark.gif'
 import  Button  from 'react-bootstrap/Button'
 import  {Modal}  from 'react-bootstrap'
@@ -13,6 +13,20 @@ function Projects(){
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const [Projects, setProjects] = useState([])
+
+
+    useEffect(() => {
+        fetch("https://api.github.com/am20dipi/repos")
+            .then(response => response.json())
+            .then(response => {
+                setProjects(response)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }, [])
 
     return (
         <div className="container">

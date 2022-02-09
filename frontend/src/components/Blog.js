@@ -1,50 +1,54 @@
-import { Link } from 'react-router-dom'
+
+import React, { useEffect, useState } from 'react'
+
 
 
 function Blog(){
+    const [blogs, setBlogs] = useState([])
+
+
+    useEffect(() => {
+        fetch("https://dev.to/api/articles?username=am20dipi")
+            .then(response => response.json())
+            .then(response => {
+                setBlogs(response)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }, [])
+
     return (
         <>
         <div className="container">
             <h2>blog</h2>
-            <p className="text-muted">Here are some of my most recent blog posts.</p>
-            <p className="text-muted"> Click the links to read the full articles. </p>
-            <p className="text-muted"> Feel free to ask questions, leave comments or follow.</p>
-            <div className="card-deck">
-                <div className="card" id="blog">
-                    <div className="card-body">
-                        <h5 className="card-title">How To: Build a Linked List in JavaScript Part 3</h5>
-                        <p className="card-text text-muted">
-                            As the third installment of the series 'How To: Build A Linked List,' this article focuses on 
-                            how to add insertion functionality via an insert() and traverse() method to our class LinkedList.
-                        </p>
-                        <br/>
-                        <a href="https://dev.to/am20dipi/how-to-build-a-linked-list-in-javascript-part-3-77m" target="_blank" rel="noopener noreferrer" className="card-link">click here</a>
-                        
-                    </div>
-                    <p className="card-text bg-light" style={{borderRadius: '8px'}}><small className="text-muted">Posted on January 25, 2022</small></p>
-                </div>
-                <div className="card" id="blog">
-                    <div className="card-body">
-                        <h5 className="card-title">LeetCode WalkThru: 'First Unique Character in a String'</h5>
-                        <p className="card-text text-muted">
-                            A step-by-step solution to a challenging LeetCode problem including explanations and code.
-                        </p>
-                        <br/>
-                        <a href="https://dev.to/am20dipi/leetcode-walkthru-first-unique-character-in-a-string-1lh5" target="_blank" rel="noopener noreferrer" className="card-link">click here</a>
-                    </div>
-                    <p className="card-text bg-light" style={{borderRadius: '8px'}}><small className="text-muted">Posted on December 28, 2021</small></p>
-                </div>
-                <div className="card" id="blog">
-                    <div className="card-body">
-                        <h5 className="card-title">How To: Build a Simple Search Bar in JavaScript</h5>
-                        <p className="card-text text-muted">
-                            A beginner's guide to implementing a fully functional search bar feature in a JavaScript application. 
-                        </p>
-                        <br/>
-                        <a href="https://dev.to/am20dipi/how-to-build-a-simple-search-bar-in-javascript-4onf"  target="_blank" rel="noopener noreferrer" className="card-link">click here</a>
-                    </div>
-                    <p className="card-text bg-light" style={{borderRadius: '8px'}}><small className="text-muted">Posted on November 14, 2021</small></p>
-                </div>
+            <p className="text-muted">Here are some of my most recent blog posts. Click the links to read the full articles. Feel free to ask questions, leave comments or follow.</p>
+            <div className="card-columns">
+                {blogs.slice(0,9).map((blog, index) => {
+                    return (
+                        <div className="card" id="blog" key={index}>
+                            <div className="card-body">
+                                <h5 className="card-title">{blog.title}</h5>
+                                <p className="card-text text-muted">{blog.description}</p>
+                                <br/>
+                                {/* <ul className="text-muted">
+                                    {blog.tag_list.map((tag) => {
+                                        return <li>{tag}</li>
+                                    })}
+                                </ul> */}
+                                <br/>
+                                <br/>
+                                <a href={blog.canonical_url} target="_blank" rel="noopener noreferrer" className="card-link">read more</a>
+                                
+                            </div>
+                            <div class="card-footer">
+                                <p className="card-text bg-light" style={{borderRadius: '8px'}}><small className="text-muted">Posted on {blog.readable_publish_date}</small></p>
+                            </div>
+                        </div>
+                    )
+                })}
+                
+                
             </div>
         </div>
             

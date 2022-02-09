@@ -38,7 +38,6 @@ function App() {
       </BrowserRouter>
       <div className="parallax" 
       style={{transform: `translateY(${offsetY * 0.1}px)`}}>
-        
         <Contact/>
         <Footer/>
       </div>

@@ -53,7 +53,7 @@ div.profile-badge{
 
 .card {
   height: 100%;
-  display: inline-grid;
+  display: grid;
 }
 
 
@@ -83,7 +83,7 @@ div.profile-badge{
   min-height: 100%;
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  background-attachment: absolute;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,9 +107,7 @@ ul {
 .social-menu ul {
   margin: 0;
   padding: 0;
-
   display: inline-block;
-
 }
 
 .social-menu ul li {
@@ -151,6 +149,10 @@ ul {
 
 .card#skillset:hover{
   transform: translate(0, -10px);
+}
+
+.page-footer{
+  bottom: 0;
 }
 
 
