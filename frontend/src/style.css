@@ -19,13 +19,11 @@ h2{
 }
 
 
-
 .container {
   font-family: 'Inter', sans-serif;
   text-align: center;
   border: none;
   width: 100%;
-
   margin: 8rem; 
 }
 
@@ -33,7 +31,6 @@ h2{
   padding: 100px;
   text-align: center;
   margin: 0px;
-
 }
 
 nav {
@@ -54,7 +51,6 @@ div.profile-badge{
 .card {
   height: 100%;
   display: grid;
-  
 }
 
 .card-link {
@@ -63,8 +59,6 @@ div.profile-badge{
   transition: 0.6s;
   color: #000;
 }
-
-
 
 
 #blog {
@@ -89,7 +83,7 @@ div.profile-badge{
 
 .parallax {
   /* The image used */
-  background-image: url("./images/gray.jpg");
+ 
 
   /* Set a specific height */
   min-height: 100%;
@@ -101,6 +95,29 @@ div.profile-badge{
   background-size: cover;
 }
 
+.fa-brands {
+  font-size: 50px;
+  padding: 8px;
+  line-height: 55px;
+  transition: 0.6s;
+  color: #000;
+}
+
+.fa-download {
+  font-size: 25px;
+  padding: 8px;
+  line-height: 55px;
+  transition: 0.6s;
+  color: #000;
+}
+
+.fa-download:hover{
+  color: blue;
+}
+
+.fa-brands:hover {
+  transform: rotate(10deg) translateX(7px);
+}
 
 
 li {
@@ -155,8 +172,7 @@ ul {
 
 .card#skillset {
   box-shadow: 0 0px 12px 0px rgb(207, 187, 187);
-  height: 125%;
-  width: 89% !important;
+  
 }
 
 .card#skillset:hover{

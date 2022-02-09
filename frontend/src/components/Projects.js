@@ -30,7 +30,6 @@ function Projects(){
                             SILVERMARK is a minimalist bookmark manager application that allows users to create, view, and delete bookmarks.
                             SILVERMARK utilizes a Ruby on Rails backend and a JavaScript frontend. SILVERMARK utilizes a React framework and Redux middleware.
                         </p>
-                        
                     </div>
                     <div className="card-footer">
                         <a href="https://github.com/am20dipi/silvermark"  target="_blank" rel="noopener noreferrer" className="card-link"><i className="fa fa-github"></i></a>
@@ -48,6 +47,7 @@ function Projects(){
                                 </Modal.Body>
                             </Modal>
                     </div>
+                    
                 </div>
                 <div className="card" id="project">
                     <img className="card-img-top" src={tooltip1} alt="tooltip-UI"/>

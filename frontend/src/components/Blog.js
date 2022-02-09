@@ -22,7 +22,7 @@ function Blog(){
         <>
         <div className="container">
             <h2>blog</h2>
-            <p className="text-muted">Here are some of my most recent blog posts. Click the arrow to read the full articles.</p>
+            <p className="text-muted">Here are some of my most recent blog posts. Click the arrow to read the full articles.</p> 
             <div className="card-columns">
                 {blogs.slice(0,9).map((blog, index) => {
                     return (

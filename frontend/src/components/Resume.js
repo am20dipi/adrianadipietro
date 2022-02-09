@@ -19,7 +19,7 @@ function Resume(){
         <>
             <div className="container">
                 <h2>resume</h2>
-                <Link to={resume} target="_blank" download>click to download</Link>
+                <Link to={resume} target="_blank" download><i className="fa fa-download"></i></Link>
                 <Document 
                     file={resume}
                     onLoadSuccess={onDocumentLoadSuccess}
@@ -28,7 +28,7 @@ function Resume(){
                 </Document>
                 <p>Page {pageNumber} of {numPages}</p>
                 <p>...</p>
-                <Link to={resume} target="_blank" download>click to download</Link>
+                <Link to={resume} target="_blank" download><i className="fa fa-download"></i></Link>
             </div>
         </>
         )
