@@ -18,6 +18,7 @@ function Blog(){
             })
     }, [])
 
+
     return (
         <>
         <div className="container">
@@ -26,7 +27,7 @@ function Blog(){
             <div className="card-columns">
                 {blogs.slice(0,9).map((blog, index) => {
                     return (
-                        <div className="card" id="blog" key={index}>
+                        <div className="card" id="blog" key={index} onClick={() => window.open(blog.canonical_url)}>
                             <div className="card-body">
                                 <h5 className="card-title">{blog.title}</h5>
                                 <p className="card-text text-muted">{blog.description}</p>

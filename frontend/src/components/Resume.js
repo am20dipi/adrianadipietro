@@ -27,7 +27,6 @@ function Resume(){
                     <Page pageNumber={pageNumber} />
                 </Document>
                 <p>Page {pageNumber} of {numPages}</p>
-                <p>...</p>
                 <Link to={resume} target="_blank" download><i className="fa fa-download"></i></Link>
             </div>
         </>

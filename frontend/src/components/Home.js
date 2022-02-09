@@ -23,7 +23,7 @@ function Home(){
                 <p>I prioritize effective results by effective means.</p>
             </div>
             <div className="container">
-                <h4>LIFELONG TEACHER + STUDENT</h4>
+                <h3>LIFELONG TEACHER + STUDENT</h3>
                 <p>As I am consistently self-teaching, I welcome new technologies as learning experiences.</p>
                 <p>I enjoy collaborating both by being a team player, a student, and a teacher.</p>
                 {/* JS ICON, REACT ICON, HTML ICON, NODE ICON */}
