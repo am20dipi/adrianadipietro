@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Document, Page, pdfjs } from "react-pdf";
-import resume from '../AdrianaDiPietroResume.pdf'
+import resume from '../images/AdrianaDiPietroResume.pdf'
 import { Link } from 'react-router-dom'
 
 

@@ -89,7 +89,7 @@ div.profile-badge{
 
 .parallax {
   /* The image used */
-  background-image: url("gray.jpg");
+  background-image: url("./images/gray.jpg");
 
   /* Set a specific height */
   min-height: 100%;

@@ -1,11 +1,11 @@
-import silvermark from '../silvermark.png'
-import upfront from '../upfront.png'
+import silvermark from '../images/silvermark.png'
+import upfront from '../images/upfront.png'
 
-import tooltip1 from '../tooltip1.png'
-import tooltip2 from '../tooltip2.png'
+import tooltip1 from '../images/tooltip1.png'
+import tooltip2 from '../images/tooltip2.png'
 
 import React, { useState, useEffect } from 'react'
-import gif from '../silvermark.gif'
+import gif from '../images/silvermark.gif'
 import  Button  from 'react-bootstrap/Button'
 import { Modal }  from 'react-bootstrap'
 
