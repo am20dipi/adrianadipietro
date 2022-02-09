@@ -1,11 +1,13 @@
 import silvermark from '../silvermark.png'
 import upfront from '../upfront.png'
 
+import tooltip1 from '../tooltip1.png'
+import tooltip2 from '../tooltip2.png'
+
 import React, { useState, useEffect } from 'react'
 import gif from '../silvermark.gif'
 import  Button  from 'react-bootstrap/Button'
-import  {Modal}  from 'react-bootstrap'
-
+import { Modal }  from 'react-bootstrap'
 
 
 function Projects(){
@@ -14,19 +16,6 @@ function Projects(){
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const [Projects, setProjects] = useState([])
-
-
-    useEffect(() => {
-        fetch("https://api.github.com/am20dipi/repos")
-            .then(response => response.json())
-            .then(response => {
-                setProjects(response)
-            })
-            .catch(err => {
-                console.log(err)
-            })
-    }, [])
 
     return (
         <div className="container">
@@ -41,33 +30,37 @@ function Projects(){
                             SILVERMARK is a minimalist bookmark manager application that allows users to create, view, and delete bookmarks.
                             SILVERMARK utilizes a Ruby on Rails backend and a JavaScript frontend. SILVERMARK utilizes a React framework and Redux middleware.
                         </p>
-                        <a href="https://github.com/am20dipi/silvermark"  target="_blank" rel="noopener noreferrer" className="card-link">github</a>
-                        {/* <a href="https://youtu.be/67Rem5GVe4M"  target="_blank" rel="noopener noreferrer" className="card-link">demo</a> */}
-                        <br/><br/>
-                        <Button variant="light" onClick={handleShow}>
-                            demo
-                        </Button>
+                        
+                    </div>
+                    <div className="card-footer">
+                        <a href="https://github.com/am20dipi/silvermark"  target="_blank" rel="noopener noreferrer" className="card-link"><i className="fa fa-github"></i></a>
+                            <br/>
+                            <Button className="btn" variant="primary" onClick={handleShow}>
+                                demo
+                            </Button>
 
-                        <Modal size="lg" show={show} onHide={handleClose}>
-                            <Modal.Header closeButton>
-                                <Modal.Title>SILVERMARK DEMO</Modal.Title>
-                            </Modal.Header>
-                            <Modal.Body style={{marginLeft: '85px'}}>
-                                <img alt="silvermark gif" src={gif}/>
-                            </Modal.Body>
-                        </Modal>
+                            <Modal size="lg" show={show} onHide={handleClose}>
+                                <Modal.Header closeButton>
+                                    <Modal.Title>SILVERMARK DEMO</Modal.Title>
+                                </Modal.Header>
+                                <Modal.Body style={{marginLeft: '85px'}}>
+                                    <img alt="silvermark gif" src={gif}/>
+                                </Modal.Body>
+                            </Modal>
                     </div>
                 </div>
                 <div className="card" id="project">
-                    <img className="card-img-top" src="..." alt="ADR-UI"/>
+                    <img className="card-img-top" src={tooltip1} alt="tooltip-UI"/>
+                    <img className="card-img-top" src={tooltip2} alt="tooltip"/>
                     <div className="card-body">
                         <h5 className="card-title">ADR-UI</h5>
                         <p className="card-text text-muted">
                             ADR-UI is a UI library that exemplifies simple, reusable code to be utilized in future applications.
                             ADR-UI utilizes JavaScript, HTML, CSS, Webpack and Node Package Manager.
                         </p>
-                        <a href="https://github.com/am20dipi/adr-ui"  target="_blank" rel="noopener noreferrer" className="card-link">github</a>
-
+                    </div>
+                    <div className="card-footer">
+                            <a href="https://github.com/am20dipi/adr-ui"  target="_blank" rel="noopener noreferrer" className="card-link" ><i className="fa fa-github"></i></a>
                     </div>
                 </div>
                 <div className="card" id="project">
@@ -78,8 +71,11 @@ function Projects(){
                             UPFRONT is a single page application that allows users to create, view, edit and delete items (or tasks) in a to-do list format.
                             UPFRONT utilizes a Ruby on Rails backend and a JavaScript frontend.
                         </p>
-                        <a href="https://github.com/am20dipi/upfront-task-2"  target="_blank" rel="noopener noreferrer" className="card-link">github</a>
-                        <a href="https://youtu.be/wWfE_soApbw"  target="_blank" rel="noopener noreferrer" className="card-link">demo</a>
+                        
+                    </div>
+                    <div className="card-footer">
+                        <a href="https://github.com/am20dipi/upfront-task-2"  target="_blank" rel="noopener noreferrer" className="card-link" ><i className="fa fa-github"></i></a>
+                        {/* <a href="https://youtu.be/wWfE_soApbw"  target="_blank" rel="noopener noreferrer" className="card-link">demo</a> */}
                     </div>
                 </div>
             </div>
