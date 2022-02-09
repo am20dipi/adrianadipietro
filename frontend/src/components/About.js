@@ -1,4 +1,5 @@
-
+import GoodreadsWidget  from "./GoodreadsWidget.js"
+import Music from "./Music.js"
 
 function About(){
     return(
@@ -8,7 +9,10 @@ function About(){
                 <p>...</p>
                 <p>My name is Adriana. I am a software engineer. I love reading. I live in New York.</p>
             </div>
-        </section>
+            {/* <GoodreadsWidget/> */}
+            <Music/>
+
+    </section>
     )
 
 }
