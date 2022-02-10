@@ -3,8 +3,9 @@ function Home(){
     return(
         <div className="parallax">
             <div className="header">
-                <h1>ADRIANA DIPIETRO</h1>
-                <p>...</p>
+                <h1>ADRIANA . DIPIETRO</h1>
+                <br/>
+                <br/>
                 <h2>FRONTEND-FOCUSED SOFTWARE ENGINEER</h2>
                 <h3>WITH FULL STACK EXPERIENCE</h3>
                 <br/>
@@ -19,13 +20,13 @@ function Home(){
             </div>
             <div className="container">
                 <h3>MOTIVATED TO PRODUCE RESULTS</h3>
-                <p>With an untraditional background, I introduce new perspectives and creativity.</p>
-                <p>I prioritize effective results by effective means.</p>
+                <h5>With an untraditional background, I introduce new perspectives and creativity.</h5>
+                <h5>I prioritize effective results by effective means.</h5>
             </div>
             <div className="container">
                 <h3>LIFELONG TEACHER + STUDENT</h3>
-                <p>As I am consistently self-teaching, I welcome new technologies as learning experiences.</p>
-                <p>I enjoy collaborating both by being a team player, a student, and a teacher.</p>
+                <h5>As I am consistently self-teaching, I welcome new technologies as learning experiences.</h5>
+                <h5>I enjoy collaborating both by being a team player, a student, and a teacher.</h5>
                 {/* JS ICON, REACT ICON, HTML ICON, NODE ICON */}
             </div>
             <div className="container">

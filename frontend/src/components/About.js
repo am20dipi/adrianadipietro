@@ -4,12 +4,13 @@ import Music from "./Music.js"
 function About(){
     return(
         <section>
-            <div className="container">
-                <h2>about me</h2>
+            <div className="container" style={{textAlign: 'left'}}>
+                <h2 style={{fontFamily: 'Ultra', fontSize: '60px'}}>adri</h2>
                 <p>...</p>
-                <p>My name is Adriana. I am a software engineer. I love reading. I live in New York.</p>
+                <p>I am a software engineer in love with reading and my cats.</p>
+                <p>I live in New York.</p>
             </div>
-            {/* <GoodreadsWidget/> */}
+            <GoodreadsWidget/>
             <Music/>
 
     </section>

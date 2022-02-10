@@ -1,77 +1,102 @@
+
+
+
+import React, { useState } from 'react'
+
 function GoodreadsWidget(){
+    
+
+    const [books, setBooks] = useState([
+        {
+            title: "title1",
+            content: [ 
+                {
+                    'title': 'We Have Always Lived in the Castle',
+                    'img': 'https://www.goodreads.com/review/show/3330922190?utm_medium=api&amp;utm_source=custom_widget"><img alt="We Have Always Lived in the Castle" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415357189l/89724._SX50_.jpg',
+                    'author': 'Shirley Jackson',
+                    'link': 'https://www.goodreads.com/review/show/3330922190?utm_medium=api&amp;utm_source=custom_widget'
+                }
+            ]
+        },
+        {
+            title: "title2",
+            content: [
+                {
+                    'title': 'The Song of Achilles',
+                    'author': 'Madeline Miller',
+                    'img': 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1331154660l/11250317._SX50_.jpg',
+                    'link': 'https://www.goodreads.com/review/show/3486327612?utm_medium=api&amp;utm_source=custom_widget'
+                }
+            ]
+        },
+        {
+            title: "title3",
+            content: [
+                {
+                    'title': 'Homesick for Another World',
+                    'author': 'Ottessa Moshfegh',
+                    'img': 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1469408007l/30079724._SY75_.jpg',
+                    'link': 'https://www.goodreads.com/review/show/3729375090?utm_medium=api&amp;utm_source=custom_widget'
+                }
+            ]
+        },
+        {
+            title: "title4",
+            content: [
+                {
+                    'title': 'Piranesi',
+                    'author': 'Susanna Clarke',
+                    'img': 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1623122811l/56268907._SX50_.jpg',
+                    'link': 'https://www.goodreads.com/review/show/4412117688?utm_medium=api&amp;utm_source=custom_widget'
+                }
+            ] 
+        },
+        {
+           title: "title5",
+           content: [
+               {
+                   'title': 'The Reluctant Fundamentalist',
+                   'author': 'Mohsin Hamed',
+                   'img': 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630677173l/40961543._SY75_.jpg',
+                   'link': 'https://www.goodreads.com/review/show/3818551993?utm_medium=api&amp;utm_source=custom_widget'
+               }
+           ] 
+        },
+        {
+            title: "title6",
+            content: [
+                {
+                    'title':  "Why Fish Don't Exist: A Story of Loss, Love, and the Hidden Order of Life",
+                    'author': 'Lulu Miller',
+                    'img': 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565526670l/50887097._SY75_.jpg',
+                    'link': 'https://www.goodreads.com/review/show/3582028772?utm_medium=api&amp;utm_source=custom_widget'
+                }
+
+            ]
+        }
+    ])
+    //debugger
     return (
         <div className="container">
-                <div id="gr_custom_widget_1644441485">
-                        <div className="gr_custom_container_1644441485">
-                            <h2 className="gr_custom_header_1644441485">Recently Read</h2>
-                                    <div className="gr_custom_each_container_1644441485">
-                                        <div className="gr_custom_book_container_1644441485">
-                                            <a title="We Have Always Lived in the Castle" rel="nofollow" href="https://www.goodreads.com/review/show/3330922190?utm_medium=api&amp;utm_source=custom_widget"><img alt="We Have Always Lived in the Castle" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415357189l/89724._SX50_.jpg" /></a>
-                                        </div>
-                                        <div className="gr_custom_title_1644441485">
-                                            <a rel="nofollow" href="https://www.goodreads.com/review/show/3330922190?utm_medium=api&amp;utm_source=custom_widget">We Have Always Lived in the Castle</a>
-                                        </div>
-                                        <div className="gr_custom_author_1644441485">
-                                            Shirley Jackson
-                                        </div>
-                                    </div>
-                                    <div className="gr_custom_each_container_1644441485">
-                                        <div className="gr_custom_book_container_1644441485">
-                                            <a title="The Song of Achilles" rel="nofollow" href="https://www.goodreads.com/review/show/3486327612?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Song of Achilles" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1331154660l/11250317._SX50_.jpg" /></a>
-                                        </div>
-                                        <div className="gr_custom_title_1644441485">
-                                            <a rel="nofollow" href="https://www.goodreads.com/review/show/3486327612?utm_medium=api&amp;utm_source=custom_widget">The Song of Achilles</a>
-                                        </div>
-                                        <div className="gr_custom_author_1644441485">
-                                            Madeline Miller
-                                        </div>
-                                    </div>
-                                    <div className="gr_custom_each_container_1644441485">
-                                        <div className="gr_custom_book_container_1644441485">
-                                            <a title="Homesick for Another World" rel="nofollow" href="https://www.goodreads.com/review/show/3729375090?utm_medium=api&amp;utm_source=custom_widget"><img alt="Homesick for Another World" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1469408007l/30079724._SY75_.jpg" /></a>
-                                        </div>
-                                        <div className="gr_custom_title_1644441485">
-                                            <a rel="nofollow" href="https://www.goodreads.com/review/show/3729375090?utm_medium=api&amp;utm_source=custom_widget">Homesick for Another World</a>
-                                        </div>
-                                        <div className="gr_custom_author_1644441485">
-                                           Ottessa Moshfegh
-                                        </div>
-                                    </div>
-                                    <div className="gr_custom_each_container_1644441485">
-                                        <div className="gr_custom_book_container_1644441485">
-                                            <a title="Piranesi" rel="nofollow" href="https://www.goodreads.com/review/show/4412117688?utm_medium=api&amp;utm_source=custom_widget"><img alt="Piranesi" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1623122811l/56268907._SX50_.jpg" /></a>
-                                        </div>
-                                        <div className="gr_custom_title_1644441485">
-                                            <a rel="nofollow" href="https://www.goodreads.com/review/show/4412117688?utm_medium=api&amp;utm_source=custom_widget">Piranesi</a>
-                                        </div>
-                                        <div className="gr_custom_author_1644441485">
-                                            Susanna Clarke
-                                        </div>
-                                    </div>
-                                
-                                    <div className="gr_custom_each_container_1644441485">
-                                        <div className="gr_custom_book_container_1644441485">
-                                            <a title="The Reluctant Fundamentalist" rel="nofollow" href="https://www.goodreads.com/review/show/3818551993?utm_medium=api&amp;utm_source=custom_widget"><img alt="The Reluctant Fundamentalist" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630677173l/40961543._SY75_.jpg" /></a>
-                                        </div>
-                                        <div className="gr_custom_title_1644441485">
-                                            <a rel="nofollow" href="https://www.goodreads.com/review/show/3818551993?utm_medium=api&amp;utm_source=custom_widget">The Reluctant Fundamentalist</a>
-                                        </div>
-                                        <div className="gr_custom_author_1644441485">
-                                            Mohsin Hamid
-                                        </div>
-                                    </div>
-                                    <div className="gr_custom_each_container_1644441485">
-                                        <div className="gr_custom_book_container_1644441485">
-                                            <a title="Why Fish Don't Exist: A Story of Loss, Love, and the Hidden Order of Life" rel="nofollow" href="https://www.goodreads.com/review/show/3582028772?utm_medium=api&amp;utm_source=custom_widget"><img alt="Why Fish Don't Exist: A Story of Loss, Love, and the Hidden Order of Life" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565526670l/50887097._SY75_.jpg" /></a>
-                                        </div>
-                                        <div className="gr_custom_title_1644441485">
-                                            <a rel="nofollow" href="https://www.goodreads.com/review/show/3582028772?utm_medium=api&amp;utm_source=custom_widget">Why Fish Don't Exist: A Story of Loss, Love, and the Hidden Order of Life</a>
-                                        </div>
-                                        <div className="gr_custom_author_1644441485">
-                                          Lulu Miller
-                                        </div>
-                                    </div>
-                                    <div className="gr_custom_each_container_1644441485">
+            {books.content.map((book, index) => {
+                    return (
+                        <div className="card" key={index}>
+                            <p>{book.author}</p>
+                            {/* <a href={book.link}>{book.title}</a>
+                            <p>{book.author}</p>
+                            <img src={book.img} alt="book cover"></img> */}
+                        </div>
+                    )
+            })}
+                                    
+        </div>
+    )
+}
+
+
+export default GoodreadsWidget
+/* 
+<div className="gr_custom_each_container_1644441485">
                                         <div className="gr_custom_book_container_1644441485">
                                             <a title="Ariadne" rel="nofollow" href="https://www.goodreads.com/review/show/4308907927?utm_medium=api&amp;utm_source=custom_widget"><img alt="Ariadne" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1601959039l/54860614._SY75_.jpg" /></a>
                                         </div>
@@ -209,10 +234,4 @@ function GoodreadsWidget(){
                                 </center>
                             </div>
                         </div>
-                <script src="https://www.goodreads.com/review/custom_widget/105779552.Recently%20Read?cover_position=left&cover_size=small&num_books=20&order=d&shelf=read&show_author=1&show_cover=1&show_rating=0&show_review=0&show_tags=0&show_title=1&sort=date_read&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1644441485&widget_text_color=000000&widget_title_size=medium&widget_width=medium" type="text/javascript" charSet="utf-8"></script>
-        </div>
-    )
-}
-
-
-export default GoodreadsWidget
+                <script src="https://www.goodreads.com/review/custom_widget/105779552.Recently%20Read?cover_position=left&cover_size=small&num_books=20&order=d&shelf=read&show_author=1&show_cover=1&show_rating=0&show_review=0&show_tags=0&show_title=1&sort=date_read&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1644441485&widget_text_color=000000&widget_title_size=medium&widget_width=medium" type="text/javascript" charSet="utf-8"></script> */
