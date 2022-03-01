@@ -22,10 +22,9 @@ function Blog(){
     return (
         <>
         <div className="container">
-            <h2>blog</h2>
             <p className="text-muted">Here are some of my most recent blog posts. Click the arrow to read the full articles.</p> 
             <div className="card-columns">
-                {blogs.slice(0,9).map((blog, index) => {
+                {blogs.slice(0,6).map((blog, index) => {
                     return (
                         <div className="card" id="blog" key={index} onClick={() => window.open(blog.canonical_url)}>
                             <div className="card-body">

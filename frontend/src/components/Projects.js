@@ -19,7 +19,7 @@ function Projects(){
 
     return (
         <div className="container">
-            <h2>projects</h2>
+
             <br/>
             <div className="card-deck">
                 <div className="card" id="project">
@@ -75,6 +75,20 @@ function Projects(){
                     </div>
                     <div className="card-footer">
                         <a href="https://github.com/am20dipi/upfront-task-2"  target="_blank" rel="noopener noreferrer" className="card-link" ><i className="fa fa-github"></i></a>
+                        {/* <a href="https://youtu.be/wWfE_soApbw"  target="_blank" rel="noopener noreferrer" className="card-link">demo</a> */}
+                    </div>
+                </div>
+                <div className="card" id="project">
+                    <img className="card-img-top" style={{height: '11em'}} src=".." alt="dillonperino.com"/>
+                    <div className="card-body">
+                        <h5 className="card-title">dillonperino.com</h5>
+                        <p className="card-text text-muted">
+                            dillonperino.com is an art portfolio for a very talented artist. dillonperino.com exemplifies the living and ever-changing skills and accomplishments of Dillon Perino.
+                        </p>
+                        
+                    </div>
+                    <div className="card-footer">
+                        <a href="https://github.com/am20dipi/dillonperino"  target="_blank" rel="noopener noreferrer" className="card-link" ><i className="fa fa-github"></i></a>
                         {/* <a href="https://youtu.be/wWfE_soApbw"  target="_blank" rel="noopener noreferrer" className="card-link">demo</a> */}
                     </div>
                 </div>
