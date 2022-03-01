@@ -9,32 +9,70 @@ import gif from '../images/silvermark.gif'
 import  Button  from 'react-bootstrap/Button'
 import { Modal }  from 'react-bootstrap'
 
+const projects = [
+    {
+        name: 'SILVERMARK',
+        image: silvermark,
+        description: 'SILVERMARK is a minimalist bookmark manager application that allows users to create, view, and delete bookmarks. SILVERMARK utilizes a Ruby on Rails backend and a JavaScript frontend. SILVERMARK utilizes a React framework and Redux middleware.',
+        github: 'https://github.com/am20dipi/silvermark'
+    },
+    {
+        name: 'UPFRONT',
+        image: upfront,
+        description: 'UPFRONT is a single page application that allows users to create, view, edit and delete items (or tasks) in a to-do list format. UPFRONT utilizes a Ruby on Rails backend and a JavaScript frontend.',
+        github: 'https://github.com/am20dipi/upfront-task-2'
+    },
+    {
+        name: 'dillonperino.com',
+        image: null,
+        description: "dillonperino.com is an art-portfolio website built using ReactJS, HTML, CSS and Bootstrap. Dillonperino.com is a living and changing collection of art that reflects the artist's accomplishments, skills and experiences.",
+        github: 'https://github.com/am20dipi/dillonperino'
+    },
+    {
+        name: 'ADR-UI',
+        image: tooltip2,
+        description: 'ADR-UI is a UI library that exemplifies simple, reusable code to be utilized in future applications. ADR-UI utilizes JavaScript, HTML, CSS, Webpack and Node Package Manager.',
+        github: 'https://github.com/am20dipi/adr-ui'
+    }
+]
+
 
 function Projects(){
-    const [show, setShow] = useState(false);
+    /* const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleShow = () => setShow(true); */
 
 
     return (
         <div className="container">
-
+            <h2>recent work</h2>
             <br/>
             <div className="card-deck">
-                <div className="card" id="project">
-                    <img className="card-img-top" src={silvermark} alt="SILVERMARK image" style={{padding: '1px 1px', borderRadius: '7px'}}/>
-                    <div className="card-body">
-                        <h5 className="card-title">SILVERMARK</h5>
-                        <p className="card-text text-muted">
-                            SILVERMARK is a minimalist bookmark manager application that allows users to create, view, and delete bookmarks.
-                            SILVERMARK utilizes a Ruby on Rails backend and a JavaScript frontend. SILVERMARK utilizes a React framework and Redux middleware.
-                        </p>
+                {projects.map((project, index) => {
+                    return (
+                    <div className="card" id="project" key={index} onClick={() => window.open(project.github)}>
+                        <img className="card-img-top" src={project.image} alt={project.name}/>
+                        <div className="card-body">
+                            <h5 className="card-title">{project.name}</h5>
+                            <p className="card-text text-muted">{project.description}</p>
+                        </div>
+                        <div className="card-footer">
+                                <a href={project.github} target="_blank" rel="noopener noreferrer" className="card-link" ><i className="fa fa-github"></i></a>
+                        </div>
                     </div>
-                    <div className="card-footer">
-                        <a href="https://github.com/am20dipi/silvermark"  target="_blank" rel="noopener noreferrer" className="card-link"><i className="fa fa-github"></i></a>
-                            <br/>
-                            <Button className="btn" variant="primary" onClick={handleShow}>
+                    )
+                })}
+                
+            </div>
+        </div>
+    )
+}
+
+export default Projects
+
+
+{/* <Button className="btn" variant="primary" onClick={handleShow}>
                                 demo
                             </Button>
 
@@ -45,56 +83,4 @@ function Projects(){
                                 <Modal.Body style={{marginLeft: '85px'}}>
                                     <img alt="silvermark gif" src={gif}/>
                                 </Modal.Body>
-                            </Modal>
-                    </div>
-                    
-                </div>
-                <div className="card" id="project">
-                    <img className="card-img-top" src={tooltip1} alt="tooltip-UI"/>
-                    <img className="card-img-top" src={tooltip2} alt="tooltip"/>
-                    <div className="card-body">
-                        <h5 className="card-title">ADR-UI</h5>
-                        <p className="card-text text-muted">
-                            ADR-UI is a UI library that exemplifies simple, reusable code to be utilized in future applications.
-                            ADR-UI utilizes JavaScript, HTML, CSS, Webpack and Node Package Manager.
-                        </p>
-                    </div>
-                    <div className="card-footer">
-                            <a href="https://github.com/am20dipi/adr-ui"  target="_blank" rel="noopener noreferrer" className="card-link" ><i className="fa fa-github"></i></a>
-                    </div>
-                </div>
-                <div className="card" id="project">
-                    <img className="card-img-top" style={{height: '11em'}} src={upfront} alt="UPFRONT"/>
-                    <div className="card-body">
-                        <h5 className="card-title">UPFRONT</h5>
-                        <p className="card-text text-muted">
-                            UPFRONT is a single page application that allows users to create, view, edit and delete items (or tasks) in a to-do list format.
-                            UPFRONT utilizes a Ruby on Rails backend and a JavaScript frontend.
-                        </p>
-                        
-                    </div>
-                    <div className="card-footer">
-                        <a href="https://github.com/am20dipi/upfront-task-2"  target="_blank" rel="noopener noreferrer" className="card-link" ><i className="fa fa-github"></i></a>
-                        {/* <a href="https://youtu.be/wWfE_soApbw"  target="_blank" rel="noopener noreferrer" className="card-link">demo</a> */}
-                    </div>
-                </div>
-                <div className="card" id="project">
-                    <img className="card-img-top" style={{height: '11em'}} src=".." alt="dillonperino.com"/>
-                    <div className="card-body">
-                        <h5 className="card-title">dillonperino.com</h5>
-                        <p className="card-text text-muted">
-                            dillonperino.com is an art portfolio for a very talented artist. dillonperino.com exemplifies the living and ever-changing skills and accomplishments of Dillon Perino.
-                        </p>
-                        
-                    </div>
-                    <div className="card-footer">
-                        <a href="https://github.com/am20dipi/dillonperino"  target="_blank" rel="noopener noreferrer" className="card-link" ><i className="fa fa-github"></i></a>
-                        {/* <a href="https://youtu.be/wWfE_soApbw"  target="_blank" rel="noopener noreferrer" className="card-link">demo</a> */}
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
-
-export default Projects
+                            </Modal> */}

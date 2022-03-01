@@ -23,10 +23,10 @@ function Blog(){
         <>
         <div className="container">
             <p className="text-muted">Here are some of my most recent blog posts. Click the arrow to read the full articles.</p> 
-            <div className="card-columns">
+            <div className="card-columns" >
                 {blogs.slice(0,6).map((blog, index) => {
                     return (
-                        <div className="card" id="blog" key={index} onClick={() => window.open(blog.canonical_url)}>
+                        <div className="card" id="blog"  key={index} onClick={() => window.open(blog.canonical_url)}>
                             <div className="card-body">
                                 <h5 className="card-title">{blog.title}</h5>
                                 <p className="card-text text-muted">{blog.description}</p>
