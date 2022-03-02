@@ -1,93 +1,50 @@
+import React from 'react'
+
+const books = [
+    {
+        title: 'We Have Always Lived in the Castle',
+        img: 'https://www.goodreads.com/review/show/3330922190?utm_medium=api&amp;utm_source=custom_widget',
+        author: 'Shirley Jackson',
+        link: 'https://www.goodreads.com/review/show/3330922190?utm_medium=api&amp;utm_source=custom_widget'
+    },
+    {
+        title: 'Homesick for Another World',
+        author: 'Ottessa Moshfegh',
+        img: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1469408007l/30079724._SY75_.jpg',
+        link: 'https://www.goodreads.com/review/show/3729375090?utm_medium=api&amp;utm_source=custom_widget'
+    },
+    {
+        title: 'The Reluctant Fundamentalist',
+        author: 'Mohsin Hamed',
+        img: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630677173l/40961543._SY75_.jpg',
+        link: 'https://www.goodreads.com/review/show/3818551993?utm_medium=api&amp;utm_source=custom_widget'
+    },
+    {
+        title:  "Why Fish Don't Exist: A Story of Loss, Love, and the Hidden Order of Life",
+        author: 'Lulu Miller',
+        img: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565526670l/50887097._SY75_.jpg',
+        link: 'https://www.goodreads.com/review/show/3582028772?utm_medium=api&amp;utm_source=custom_widget'
+    }
 
 
 
-import React, { useState } from 'react'
 
+]
 function GoodreadsWidget(){
     
-
-    const [books, setBooks] = useState([
-        {
-            title: "title1",
-            content: [ 
-                {
-                    'title': 'We Have Always Lived in the Castle',
-                    'img': 'https://www.goodreads.com/review/show/3330922190?utm_medium=api&amp;utm_source=custom_widget"><img alt="We Have Always Lived in the Castle" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415357189l/89724._SX50_.jpg',
-                    'author': 'Shirley Jackson',
-                    'link': 'https://www.goodreads.com/review/show/3330922190?utm_medium=api&amp;utm_source=custom_widget'
-                }
-            ]
-        },
-        {
-            title: "title2",
-            content: [
-                {
-                    'title': 'The Song of Achilles',
-                    'author': 'Madeline Miller',
-                    'img': 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1331154660l/11250317._SX50_.jpg',
-                    'link': 'https://www.goodreads.com/review/show/3486327612?utm_medium=api&amp;utm_source=custom_widget'
-                }
-            ]
-        },
-        {
-            title: "title3",
-            content: [
-                {
-                    'title': 'Homesick for Another World',
-                    'author': 'Ottessa Moshfegh',
-                    'img': 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1469408007l/30079724._SY75_.jpg',
-                    'link': 'https://www.goodreads.com/review/show/3729375090?utm_medium=api&amp;utm_source=custom_widget'
-                }
-            ]
-        },
-        {
-            title: "title4",
-            content: [
-                {
-                    'title': 'Piranesi',
-                    'author': 'Susanna Clarke',
-                    'img': 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1623122811l/56268907._SX50_.jpg',
-                    'link': 'https://www.goodreads.com/review/show/4412117688?utm_medium=api&amp;utm_source=custom_widget'
-                }
-            ] 
-        },
-        {
-           title: "title5",
-           content: [
-               {
-                   'title': 'The Reluctant Fundamentalist',
-                   'author': 'Mohsin Hamed',
-                   'img': 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630677173l/40961543._SY75_.jpg',
-                   'link': 'https://www.goodreads.com/review/show/3818551993?utm_medium=api&amp;utm_source=custom_widget'
-               }
-           ] 
-        },
-        {
-            title: "title6",
-            content: [
-                {
-                    'title':  "Why Fish Don't Exist: A Story of Loss, Love, and the Hidden Order of Life",
-                    'author': 'Lulu Miller',
-                    'img': 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565526670l/50887097._SY75_.jpg',
-                    'link': 'https://www.goodreads.com/review/show/3582028772?utm_medium=api&amp;utm_source=custom_widget'
-                }
-
-            ]
-        }
-    ])
-    //debugger
     return (
         <div className="container">
-            {books.content.map((book, index) => {
-                    return (
-                        <div className="card" key={index}>
-                            <p>{book.author}</p>
-                            {/* <a href={book.link}>{book.title}</a>
-                            <p>{book.author}</p>
-                            <img src={book.img} alt="book cover"></img> */}
-                        </div>
-                    )
-            })}
+            <div className="card-columns">
+                {books.map((book, index) => {
+                        return (
+                            <div className="card" key={index}>
+                                <p>{book.author}</p>
+                                <a href={book.link} target="_blank" rel="noopener noreferrer">{book.title}</a>
+                                <img src={book.img} alt={`${book.title} cover`}></img>
+                            </div>
+                        )
+                })}
+            </div>
                                     
         </div>
     )

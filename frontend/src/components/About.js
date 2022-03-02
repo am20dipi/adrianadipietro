@@ -10,7 +10,7 @@ function About(){
                 <p>I am a software engineer in love with reading and my cats.</p>
                 <p>I live in New York.</p>
             </div>
-            {/* <GoodreadsWidget/> */}
+            <GoodreadsWidget/> 
             <Music/>
 
     </section>
